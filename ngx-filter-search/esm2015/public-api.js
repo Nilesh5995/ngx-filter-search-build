@@ -1,0 +1,7 @@
+/*
+ * Public API Surface of ngx-filter-search
+ */
+export * from './lib/ngx-filter-search.service';
+export * from './lib/ngx-filter-search.component';
+export * from './lib/ngx-filter-search.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL25neC1maWx0ZXItc2VhcmNoL3NyYy9wdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztHQUVHO0FBRUgsY0FBYyxpQ0FBaUMsQ0FBQztBQUNoRCxjQUFjLG1DQUFtQyxDQUFDO0FBQ2xELGNBQWMsZ0NBQWdDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICogUHVibGljIEFQSSBTdXJmYWNlIG9mIG5neC1maWx0ZXItc2VhcmNoXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9saWIvbmd4LWZpbHRlci1zZWFyY2guc2VydmljZSc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9uZ3gtZmlsdGVyLXNlYXJjaC5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbmd4LWZpbHRlci1zZWFyY2gubW9kdWxlJztcbiJdfQ==

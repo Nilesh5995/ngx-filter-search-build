@@ -1,0 +1,19 @@
+{
+  "name": "ngx-filter-search",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^11.1.2",
+    "@angular/core": "^11.1.2"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "main": "bundles/ngx-filter-search.umd.js",
+  "module": "fesm2015/ngx-filter-search.js",
+  "es2015": "fesm2015/ngx-filter-search.js",
+  "esm2015": "esm2015/ngx-filter-search.js",
+  "fesm2015": "fesm2015/ngx-filter-search.js",
+  "typings": "ngx-filter-search.d.ts",
+  "metadata": "ngx-filter-search.metadata.json",
+  "sideEffects": false
+}
