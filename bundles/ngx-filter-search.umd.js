@@ -615,6 +615,7 @@
             if (allSelectedCheckBoxesArray.length > 0) {
                 // Filter the each array at a time, In config multiple filters.
                 singleTypeFilterArray = this.filterSingle(newLots, allSelectedCheckBoxesArray);
+                console.log(singleTypeFilterArray, 'singleTypeFilterArray');
                 newLots = singleTypeFilterArray;
             }
             else {
