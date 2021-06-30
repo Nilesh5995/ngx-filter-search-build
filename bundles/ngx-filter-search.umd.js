@@ -360,9 +360,7 @@
 
     var NgxFilterSearchComponent = /** @class */ (function () {
         function NgxFilterSearchComponent() {
-            this.checkChanges = '';
             this.filteredData = new i0.EventEmitter();
-            this.myLots = { 'isChecked': false };
             this.tempFilter = {};
             this.allSelectedFilters = [];
             this.filter = 'all';
@@ -371,7 +369,6 @@
             this.defaultFilter = 'all';
             this.defaultSort = 'lot_number_low';
             this.defaultSearch = '';
-            this.isUserLoggedIn = false;
             this.value = 30;
             this.tooltip = { placement: 'Before', isVisible: true, showOn: 'Always' };
             this.ticks = { placement: 'After', largeStep: 20, smallStep: 10, showSmallTicks: true };
@@ -412,6 +409,7 @@
                 this.setCheckBoxFilter(data[i]);
             }
             this.sortCheckBoxesFilter();
+            console.log(this.tempFilter, 'this.temopfiler');
         };
         NgxFilterSearchComponent.prototype.setCheckBoxFilter = function (data) {
             // Checked the filter parameter
@@ -590,12 +588,6 @@
                     _loop_2(j);
                 }
             }
-            // Checked the my Lots status.
-            if (this.myLots.isChecked) {
-                if (this.likedLots.length > 0) {
-                    newLots = this.likedLots;
-                }
-            }
             var allSelectedCheckBoxesArray = [];
             var allSelectedRangeFilterArray = [];
             // Check the config for the filter....
@@ -618,6 +610,7 @@
             }
             var singleTypeFilterArray = [];
             this.allSelectedFilters = allSelectedCheckBoxesArray;
+            console.log(this.allSelectedFilters, 'this.allSelectedFilters ');
             //Filter the data based on checkboxes
             if (allSelectedCheckBoxesArray.length > 0) {
                 // Filter the each array at a time, In config multiple filters.
@@ -641,9 +634,11 @@
             this.filterData = newLots;
             // Check the Sorting is applied if Yes then sort the array after filter.
             if (this.isSorted) {
+                console.log(this.filterData, 'this.filterData in library ..first');
                 //this.sortLots();
             }
             else {
+                console.log(this.filterData, 'this.filterData in library');
                 this.filteredData.emit(this.filterData);
             }
             // Emit the value to the parent component
@@ -788,8 +783,6 @@
     NgxFilterSearchComponent.propDecorators = {
         data: [{ type: i0.Input }],
         config: [{ type: i0.Input }],
-        likedLots: [{ type: i0.Input }],
-        checkChanges: [{ type: i0.Input }],
         filteredData: [{ type: i0.Output }]
     };
 

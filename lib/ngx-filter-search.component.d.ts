@@ -2,13 +2,7 @@ import { OnInit, EventEmitter } from '@angular/core';
 export declare class NgxFilterSearchComponent implements OnInit {
     data: any;
     config: any;
-    likedLots: any;
-    checkChanges: string;
     filteredData: EventEmitter<any>;
-    oldData: any;
-    myLots: {
-        isChecked: boolean;
-    };
     tempFilter: any;
     searchText: any;
     filterData: any;
@@ -20,8 +14,6 @@ export declare class NgxFilterSearchComponent implements OnInit {
     defaultSort: string;
     defaultSearch: string;
     selectedLotStatusFilter: any;
-    isUserLoggedIn: boolean;
-    customFilters: any;
     value: number;
     tooltip: Object;
     ticks: Object;
