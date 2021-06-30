@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('lodash'), require('@syncfusion/ej2-angular-inputs'), require('@angular/forms')) :
-    typeof define === 'function' && define.amd ? define('ngx-filter-search', ['exports', '@angular/core', 'lodash', '@syncfusion/ej2-angular-inputs', '@angular/forms'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['ngx-filter-search'] = {}, global.ng.core, global._, global.ej2AngularInputs, global.ng.forms));
-}(this, (function (exports, i0, _, ej2AngularInputs, forms) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('lodash'), require('@syncfusion/ej2-angular-inputs'), require('@angular/forms'), require('@angular/common'), require('@angular/platform-browser')) :
+    typeof define === 'function' && define.amd ? define('ngx-filter-search', ['exports', '@angular/core', 'lodash', '@syncfusion/ej2-angular-inputs', '@angular/forms', '@angular/common', '@angular/platform-browser'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['ngx-filter-search'] = {}, global.ng.core, global._, global.ej2AngularInputs, global.ng.forms, global.ng.common, global.ng.platformBrowser));
+}(this, (function (exports, i0, _, ej2AngularInputs, forms, common, platformBrowser) { 'use strict';
 
     function _interopNamespace(e) {
         if (e && e.__esModule) return e;
@@ -802,8 +802,10 @@
         { type: i0.NgModule, args: [{
                     declarations: [NgxFilterSearchComponent],
                     imports: [
+                        platformBrowser.BrowserModule,
+                        common.CommonModule,
                         ej2AngularInputs.SliderModule,
-                        forms.FormsModule
+                        forms.FormsModule,
                     ],
                     exports: [NgxFilterSearchComponent]
                 },] }

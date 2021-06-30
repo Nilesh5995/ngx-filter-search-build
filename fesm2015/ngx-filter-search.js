@@ -3,6 +3,8 @@ import { Injectable, EventEmitter, Component, Input, Output, NgModule } from '@a
 import * as _ from 'lodash';
 import { SliderModule } from '@syncfusion/ej2-angular-inputs';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 
 class NgxFilterSearchService {
     constructor() { }
@@ -446,8 +448,10 @@ NgxFilterSearchModule.decorators = [
     { type: NgModule, args: [{
                 declarations: [NgxFilterSearchComponent],
                 imports: [
+                    BrowserModule,
+                    CommonModule,
                     SliderModule,
-                    FormsModule
+                    FormsModule,
                 ],
                 exports: [NgxFilterSearchComponent]
             },] }
