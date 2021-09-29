@@ -567,6 +567,7 @@
             var _this = this;
             // Assign the original array without any filter to the newLots
             var newLots = this.data;
+            console.log(this.data, 'this.data');
             // Check the searchText is not undefined and then search the by provided fields.
             if (this.searchText !== undefined) {
                 this.searchText = this.searchText.toLocaleLowerCase();
@@ -591,6 +592,7 @@
                     _loop_2(j);
                 }
             }
+            console.log(newLots, 'newLots in middel');
             var allSelectedCheckBoxesArray = [];
             var allSelectedRangeFilterArray = [];
             // Check the config for the filter....
