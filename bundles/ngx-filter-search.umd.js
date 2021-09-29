@@ -656,6 +656,8 @@
             //this.addFilterToRoute()
         };
         NgxFilterSearchComponent.prototype.filterSingle = function (data, selectedCheckBoxesArrays) {
+            console.log(data, 'data in the filter single');
+            console.log(selectedCheckBoxesArrays, 'selectedCheckBoxesArrays');
             for (var k = selectedCheckBoxesArrays.length - 1; k >= 0; k--) {
                 var newData = [];
                 if (selectedCheckBoxesArrays[k].length > 0) {
@@ -669,6 +671,7 @@
                     }
                 }
             }
+            console.log(data, 'data');
             return this.uniqueValuesInArray(data);
         };
         NgxFilterSearchComponent.prototype.filterSingleRangeFilter = function (data, selectedRangeFilterArrays) {
@@ -703,6 +706,7 @@
                     });
                 }
             }
+            console.log(filtered, 'filtered');
             return this.uniqueValuesInArray(filtered);
         };
         NgxFilterSearchComponent.prototype.uniqueValuesInArray = function (data) {

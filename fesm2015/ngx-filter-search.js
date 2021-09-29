@@ -306,6 +306,8 @@ class NgxFilterSearchComponent {
         //this.addFilterToRoute()
     }
     filterSingle(data, selectedCheckBoxesArrays) {
+        console.log(data, 'data in the filter single');
+        console.log(selectedCheckBoxesArrays, 'selectedCheckBoxesArrays');
         for (let k = selectedCheckBoxesArrays.length - 1; k >= 0; k--) {
             var newData = [];
             if (selectedCheckBoxesArrays[k].length > 0) {
@@ -319,6 +321,7 @@ class NgxFilterSearchComponent {
                 }
             }
         }
+        console.log(data, 'data');
         return this.uniqueValuesInArray(data);
     }
     filterSingleRangeFilter(data, selectedRangeFilterArrays) {
@@ -353,6 +356,7 @@ class NgxFilterSearchComponent {
                 });
             }
         }
+        console.log(filtered, 'filtered');
         return this.uniqueValuesInArray(filtered);
     }
     uniqueValuesInArray(data) {
