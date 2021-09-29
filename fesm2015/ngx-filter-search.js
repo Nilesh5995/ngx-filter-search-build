@@ -232,6 +232,7 @@ class NgxFilterSearchComponent {
                 let searchArray = [];
                 searchArray = this.data.filter((it) => {
                     console.log(it, 'it');
+                    console.log(this.config.search.searchParameter[j].searchBy, 'this.config.search.searchParameter[j].searchBy');
                     console.log(it[this.config.search.searchParameter[j].searchBy], 'it[this.config.search.searchParameter[j].searchBy]');
                     if (it[this.config.search.searchParameter[j].searchBy] != null && it[this.config.search.searchParameter[j].searchBy] != undefined) {
                         return it[this.config.search.searchParameter[j].searchBy].toLocaleLowerCase().includes(this.searchText);

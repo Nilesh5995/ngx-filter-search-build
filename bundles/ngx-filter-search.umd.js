@@ -577,6 +577,7 @@
                     var searchArray = [];
                     searchArray = this_2.data.filter(function (it) {
                         console.log(it, 'it');
+                        console.log(_this.config.search.searchParameter[j].searchBy, 'this.config.search.searchParameter[j].searchBy');
                         console.log(it[_this.config.search.searchParameter[j].searchBy], 'it[this.config.search.searchParameter[j].searchBy]');
                         if (it[_this.config.search.searchParameter[j].searchBy] != null && it[_this.config.search.searchParameter[j].searchBy] != undefined) {
                             return it[_this.config.search.searchParameter[j].searchBy].toLocaleLowerCase().includes(_this.searchText);
