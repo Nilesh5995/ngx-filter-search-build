@@ -661,6 +661,7 @@
             for (var k = selectedCheckBoxesArrays.length - 1; k >= 0; k--) {
                 var newData = [];
                 if (selectedCheckBoxesArrays[k].length > 0) {
+                    console.log(selectedCheckBoxesArrays[k], 'selectedCheckBoxesArrays[k]');
                     data = this.filterArrayBasedOnCheckBoxes(data, selectedCheckBoxesArrays[k]);
                     if (data.length > 0) {
                         newData.push.apply(newData, __spread(data));
@@ -672,6 +673,7 @@
                 }
             }
             console.log(data, 'data');
+            console.log(newData, 'newData');
             return this.uniqueValuesInArray(data);
         };
         NgxFilterSearchComponent.prototype.filterSingleRangeFilter = function (data, selectedRangeFilterArrays) {
