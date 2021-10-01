@@ -363,7 +363,7 @@ class NgxFilterSearchComponent {
         return this.uniqueValuesInArray(filtered);
     }
     uniqueValuesInArray(data) {
-        const uniqueValues = data.filter((element, index) => data.findIndex((obj) => obj.lot_id == element.lot_id) == index);
+        const uniqueValues = data.filter((element, index) => data.findIndex((obj) => obj[this.config.filter.uniqueColumn] == element[this.config.filter.uniqueColumn]) == index);
         return uniqueValues;
     }
     filterArrayRangeFilter(lotsArray, rangeFilterArrays) {

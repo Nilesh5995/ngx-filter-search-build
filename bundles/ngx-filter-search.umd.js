@@ -713,7 +713,8 @@
             return this.uniqueValuesInArray(filtered);
         };
         NgxFilterSearchComponent.prototype.uniqueValuesInArray = function (data) {
-            var uniqueValues = data.filter(function (element, index) { return data.findIndex(function (obj) { return obj.lot_id == element.lot_id; }) == index; });
+            var _this = this;
+            var uniqueValues = data.filter(function (element, index) { return data.findIndex(function (obj) { return obj[_this.config.filter.uniqueColumn] == element[_this.config.filter.uniqueColumn]; }) == index; });
             return uniqueValues;
         };
         NgxFilterSearchComponent.prototype.filterArrayRangeFilter = function (lotsArray, rangeFilterArrays) {
