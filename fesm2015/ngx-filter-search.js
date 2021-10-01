@@ -359,6 +359,7 @@ class NgxFilterSearchComponent {
             }
         }
         console.log(filtered, 'filtered');
+        console.log(this.uniqueValuesInArray(filtered), 'this.uniqueValuesInArray(filtered)');
         return this.uniqueValuesInArray(filtered);
     }
     uniqueValuesInArray(data) {
