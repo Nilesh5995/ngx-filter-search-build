@@ -1010,7 +1010,7 @@
             if (rf & 2) {
                 i0__namespace.ɵɵproperty("ngIf", ctx.data && ctx.config);
             }
-        }, directives: [i1__namespace.NgIf, i2__namespace.DefaultValueAccessor, i2__namespace.NgControlStatus, i2__namespace.NgModel, i1__namespace.NgForOf, i2__namespace.CheckboxControlValueAccessor, i3__namespace.SliderComponent], pipes: [i1__namespace.SlicePipe], encapsulation: 2 });
+        }, directives: [i1__namespace.NgIf, i2__namespace.DefaultValueAccessor, i2__namespace.NgControlStatus, i2__namespace.NgModel, i1__namespace.NgForOf, i2__namespace.CheckboxControlValueAccessor, i3__namespace.SliderComponent], pipes: [i1__namespace.SlicePipe], styles: ["@import \"node_modules/@syncfusion/ej2-angular-inputs/styles/material.css\";@import \"node_modules/@syncfusion/ej2-base/styles/material.css\";@import \"node_modules/@syncfusion/ej2-buttons/styles/material.css\";@import \"node_modules/@syncfusion/ej2-popups/styles/material.css\";"] });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(NgxFilterSearchComponent, [{
                 type: i0.Component,
@@ -1021,7 +1021,7 @@
                         //     ngx-filter-search works!
                         //   </p>
                         // `,
-                        // styleUrls: ['./ngx-filter-search.component.scss'],
+                        styleUrls: ['./ngx-filter-search.component.scss'],
                         templateUrl: './ngx-filter-search.component.html',
                         styles: []
                     }]
