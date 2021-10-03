@@ -1,4 +1,5 @@
 import { OnInit, EventEmitter } from '@angular/core';
+import * as i0 from "@angular/core";
 export declare class NgxFilterSearchComponent implements OnInit {
     data: any;
     config: any;
@@ -36,4 +37,7 @@ export declare class NgxFilterSearchComponent implements OnInit {
     showMoreItems(filterBy: string, showStatus: boolean): void;
     rangeDropDownOnChange(data: any): void;
     sliderChange(data: any | undefined): void;
+    static ɵfac: i0.ɵɵFactoryDef<NgxFilterSearchComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<NgxFilterSearchComponent, "lib-ngx-filter-search", never, { "data": "data"; "config": "config"; }, { "filteredData": "filteredData"; }, never, never>;
 }
+//# sourceMappingURL=ngx-filter-search.component.d.ts.map

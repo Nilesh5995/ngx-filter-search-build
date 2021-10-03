@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('lodash'), require('@syncfusion/ej2-angular-inputs'), require('@angular/forms'), require('@angular/common'), require('@angular/platform-browser')) :
-    typeof define === 'function' && define.amd ? define('ngx-filter-search', ['exports', '@angular/core', 'lodash', '@syncfusion/ej2-angular-inputs', '@angular/forms', '@angular/common', '@angular/platform-browser'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['ngx-filter-search'] = {}, global.ng.core, global._, global.ej2AngularInputs, global.ng.forms, global.ng.common, global.ng.platformBrowser));
-}(this, (function (exports, i0, _, ej2AngularInputs, forms, common, platformBrowser) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('lodash'), require('@angular/common'), require('@angular/forms'), require('@syncfusion/ej2-angular-inputs'), require('@angular/platform-browser')) :
+    typeof define === 'function' && define.amd ? define('ngx-filter-search', ['exports', '@angular/core', 'lodash', '@angular/common', '@angular/forms', '@syncfusion/ej2-angular-inputs', '@angular/platform-browser'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['ngx-filter-search'] = {}, global.ng.core, global._, global.ng.common, global.ng.forms, global.i3, global.ng.platformBrowser));
+}(this, (function (exports, i0, _, i1, i2, i3, platformBrowser) { 'use strict';
 
     function _interopNamespace(e) {
         if (e && e.__esModule) return e;
@@ -26,19 +26,25 @@
 
     var i0__namespace = /*#__PURE__*/_interopNamespace(i0);
     var ___namespace = /*#__PURE__*/_interopNamespace(_);
+    var i1__namespace = /*#__PURE__*/_interopNamespace(i1);
+    var i2__namespace = /*#__PURE__*/_interopNamespace(i2);
+    var i3__namespace = /*#__PURE__*/_interopNamespace(i3);
 
     var NgxFilterSearchService = /** @class */ (function () {
         function NgxFilterSearchService() {
         }
         return NgxFilterSearchService;
     }());
-    NgxFilterSearchService.ɵprov = i0__namespace.ɵɵdefineInjectable({ factory: function NgxFilterSearchService_Factory() { return new NgxFilterSearchService(); }, token: NgxFilterSearchService, providedIn: "root" });
-    NgxFilterSearchService.decorators = [
-        { type: i0.Injectable, args: [{
-                    providedIn: 'root'
-                },] }
-    ];
-    NgxFilterSearchService.ctorParameters = function () { return []; };
+    NgxFilterSearchService.ɵfac = function NgxFilterSearchService_Factory(t) { return new (t || NgxFilterSearchService)(); };
+    NgxFilterSearchService.ɵprov = i0__namespace.ɵɵdefineInjectable({ token: NgxFilterSearchService, factory: NgxFilterSearchService.ɵfac, providedIn: 'root' });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(NgxFilterSearchService, [{
+                type: i0.Injectable,
+                args: [{
+                        providedIn: 'root'
+                    }]
+            }], function () { return []; }, null);
+    })();
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation.
@@ -358,6 +364,262 @@
         return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
     }
 
+    function NgxFilterSearchComponent_div_0_div_7_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r4_1 = i0__namespace.ɵɵgetCurrentView();
+            i0__namespace.ɵɵelementStart(0, "div", 8);
+            i0__namespace.ɵɵelementStart(1, "strong", 9);
+            i0__namespace.ɵɵtext(2, "Search");
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementStart(3, "div", 10);
+            i0__namespace.ɵɵelementStart(4, "div", 11);
+            i0__namespace.ɵɵelementStart(5, "input", 12);
+            i0__namespace.ɵɵlistener("ngModelChange", function NgxFilterSearchComponent_div_0_div_7_Template_input_ngModelChange_5_listener($event) { i0__namespace.ɵɵrestoreView(_r4_1); var ctx_r3 = i0__namespace.ɵɵnextContext(2); return ctx_r3.searchText = $event; })("keyup", function NgxFilterSearchComponent_div_0_div_7_Template_input_keyup_5_listener() { i0__namespace.ɵɵrestoreView(_r4_1); var ctx_r5 = i0__namespace.ɵɵnextContext(2); return ctx_r5.applyFilter(); });
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r1 = i0__namespace.ɵɵnextContext(2);
+            i0__namespace.ɵɵadvance(5);
+            i0__namespace.ɵɵproperty("ngModel", ctx_r1.searchText);
+        }
+    }
+    function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_1_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r16_1 = i0__namespace.ɵɵgetCurrentView();
+            i0__namespace.ɵɵelementStart(0, "div", 3);
+            i0__namespace.ɵɵelementStart(1, "div", 15);
+            i0__namespace.ɵɵelementStart(2, "strong", 16);
+            i0__namespace.ɵɵtext(3);
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementStart(4, "div", 17);
+            i0__namespace.ɵɵelementStart(5, "h6", 18);
+            i0__namespace.ɵɵlistener("click", function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_1_Template_h6_click_5_listener() { i0__namespace.ɵɵrestoreView(_r16_1); var config_r7 = i0__namespace.ɵɵnextContext(2).$implicit; var ctx_r15 = i0__namespace.ɵɵnextContext(3); return ctx_r15.clearSingleFilters(ctx_r15.tempFilter[config_r7.filterBy].filterBy, ctx_r15.tempFilter[config_r7.filterBy].filterType); });
+            i0__namespace.ɵɵtext(6, "Clear");
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var config_r7 = i0__namespace.ɵɵnextContext(2).$implicit;
+            var ctx_r11 = i0__namespace.ɵɵnextContext(3);
+            i0__namespace.ɵɵadvance(3);
+            i0__namespace.ɵɵtextInterpolate(ctx_r11.tempFilter[config_r7.filterBy] == null ? null : ctx_r11.tempFilter[config_r7.filterBy].filterTitle);
+        }
+    }
+    function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_2_div_1_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r25_1 = i0__namespace.ɵɵgetCurrentView();
+            i0__namespace.ɵɵelementStart(0, "div", 20);
+            i0__namespace.ɵɵelementStart(1, "input", 21);
+            i0__namespace.ɵɵlistener("ngModelChange", function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_2_div_1_Template_input_ngModelChange_1_listener($event) { var filter_r21 = ctx.$implicit; return filter_r21.isChecked = $event; })("change", function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_2_div_1_Template_input_change_1_listener() { i0__namespace.ɵɵrestoreView(_r25_1); var ctx_r24 = i0__namespace.ɵɵnextContext(6); return ctx_r24.applyFilter(); });
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementStart(2, "span", 22);
+            i0__namespace.ɵɵtext(3);
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var filter_r21 = ctx.$implicit;
+            i0__namespace.ɵɵadvance(1);
+            i0__namespace.ɵɵproperty("id", filter_r21.fieldName)("name", filter_r21.fieldName)("value", filter_r21.fieldValue)("ngModel", filter_r21.isChecked);
+            i0__namespace.ɵɵadvance(2);
+            i0__namespace.ɵɵtextInterpolate1(" ", filter_r21.fieldName, " ");
+        }
+    }
+    function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_2_div_3_h6_1_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r29_1 = i0__namespace.ɵɵgetCurrentView();
+            i0__namespace.ɵɵelementStart(0, "h6", 24);
+            i0__namespace.ɵɵlistener("click", function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_2_div_3_h6_1_Template_h6_click_0_listener() { i0__namespace.ɵɵrestoreView(_r29_1); var config_r7 = i0__namespace.ɵɵnextContext(4).$implicit; var ctx_r28 = i0__namespace.ɵɵnextContext(3); return ctx_r28.showMoreItems(ctx_r28.tempFilter[config_r7.filterBy].filterBy, true); });
+            i0__namespace.ɵɵtext(1);
+            i0__namespace.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var config_r7 = i0__namespace.ɵɵnextContext(4).$implicit;
+            var ctx_r26 = i0__namespace.ɵɵnextContext(3);
+            i0__namespace.ɵɵadvance(1);
+            i0__namespace.ɵɵtextInterpolate1(" ", ctx_r26.tempFilter[config_r7.filterBy].length - config_r7.filterCheckBoxLimit, " More ");
+        }
+    }
+    function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_2_div_3_h6_2_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r33_1 = i0__namespace.ɵɵgetCurrentView();
+            i0__namespace.ɵɵelementStart(0, "h6", 24);
+            i0__namespace.ɵɵlistener("click", function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_2_div_3_h6_2_Template_h6_click_0_listener() { i0__namespace.ɵɵrestoreView(_r33_1); var config_r7 = i0__namespace.ɵɵnextContext(4).$implicit; var ctx_r32 = i0__namespace.ɵɵnextContext(3); return ctx_r32.showMoreItems(ctx_r32.tempFilter[config_r7.filterBy].filterBy, false); });
+            i0__namespace.ɵɵtext(1, " Show Less ");
+            i0__namespace.ɵɵelementEnd();
+        }
+    }
+    function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_2_div_3_Template(rf, ctx) {
+        if (rf & 1) {
+            i0__namespace.ɵɵelementStart(0, "div");
+            i0__namespace.ɵɵtemplate(1, NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_2_div_3_h6_1_Template, 2, 1, "h6", 23);
+            i0__namespace.ɵɵtemplate(2, NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_2_div_3_h6_2_Template, 2, 0, "h6", 23);
+            i0__namespace.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var config_r7 = i0__namespace.ɵɵnextContext(3).$implicit;
+            var ctx_r20 = i0__namespace.ɵɵnextContext(3);
+            i0__namespace.ɵɵadvance(1);
+            i0__namespace.ɵɵproperty("ngIf", !ctx_r20.tempFilter[config_r7.filterBy].isShowMore);
+            i0__namespace.ɵɵadvance(1);
+            i0__namespace.ɵɵproperty("ngIf", ctx_r20.tempFilter[config_r7.filterBy].isShowMore);
+        }
+    }
+    function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_2_Template(rf, ctx) {
+        if (rf & 1) {
+            i0__namespace.ɵɵelementStart(0, "div");
+            i0__namespace.ɵɵtemplate(1, NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_2_div_1_Template, 4, 5, "div", 19);
+            i0__namespace.ɵɵpipe(2, "slice");
+            i0__namespace.ɵɵtemplate(3, NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_2_div_3_Template, 3, 2, "div", 7);
+            i0__namespace.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var config_r7 = i0__namespace.ɵɵnextContext(2).$implicit;
+            var ctx_r12 = i0__namespace.ɵɵnextContext(3);
+            i0__namespace.ɵɵadvance(1);
+            i0__namespace.ɵɵproperty("ngForOf", i0__namespace.ɵɵpipeBind3(2, 2, ctx_r12.tempFilter[config_r7.filterBy], 0, !ctx_r12.tempFilter[config_r7.filterBy].isShowMore ? config_r7.filterCheckBoxLimit : ctx_r12.tempFilter[config_r7.filterBy].filterCheckBoxLimit));
+            i0__namespace.ɵɵadvance(2);
+            i0__namespace.ɵɵproperty("ngIf", ctx_r12.tempFilter[config_r7.filterBy].length > (config_r7 == null ? null : config_r7.filterCheckBoxLimit));
+        }
+    }
+    function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_3_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r38_1 = i0__namespace.ɵɵgetCurrentView();
+            i0__namespace.ɵɵelementStart(0, "div");
+            i0__namespace.ɵɵelementStart(1, "span", 25);
+            i0__namespace.ɵɵelementStart(2, "span");
+            i0__namespace.ɵɵtext(3);
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementStart(4, "div");
+            i0__namespace.ɵɵtext(5);
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementStart(6, "div");
+            i0__namespace.ɵɵtext(7);
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementStart(8, "div");
+            i0__namespace.ɵɵtext(9);
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementStart(10, "div");
+            i0__namespace.ɵɵtext(11);
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementStart(12, "div");
+            i0__namespace.ɵɵtext(13);
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementStart(14, "ejs-slider", 26);
+            i0__namespace.ɵɵlistener("valueChange", function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_3_Template_ejs_slider_valueChange_14_listener($event) { i0__namespace.ɵɵrestoreView(_r38_1); var config_r7 = i0__namespace.ɵɵnextContext(2).$implicit; var ctx_r37 = i0__namespace.ɵɵnextContext(3); return ctx_r37.tempFilter[config_r7.filterBy].rangeValue = $event; })("change", function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_3_Template_ejs_slider_change_14_listener() { i0__namespace.ɵɵrestoreView(_r38_1); var config_r7 = i0__namespace.ɵɵnextContext(2).$implicit; var ctx_r40 = i0__namespace.ɵɵnextContext(3); return ctx_r40.sliderChange(ctx_r40.tempFilter[config_r7 == null ? null : config_r7.filterBy]); })("changed", function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_3_Template_ejs_slider_changed_14_listener() { i0__namespace.ɵɵrestoreView(_r38_1); var ctx_r42 = i0__namespace.ɵɵnextContext(5); return ctx_r42.applyFilter(); });
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelement(15, "ejs-slider", 27);
+            i0__namespace.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var config_r7 = i0__namespace.ɵɵnextContext(2).$implicit;
+            var ctx_r13 = i0__namespace.ɵɵnextContext(3);
+            i0__namespace.ɵɵadvance(3);
+            i0__namespace.ɵɵtextInterpolate2(" ", ctx_r13.tempFilter[config_r7.filterBy].rangeValue[0], " - ", ctx_r13.tempFilter[config_r7.filterBy].rangeValue[1], " ");
+            i0__namespace.ɵɵadvance(2);
+            i0__namespace.ɵɵtextInterpolate1(" ", ctx_r13.tempFilter[config_r7.filterBy].rangeValue, " range value ");
+            i0__namespace.ɵɵadvance(2);
+            i0__namespace.ɵɵtextInterpolate1(" ", ctx_r13.tempFilter[config_r7.filterBy].minValue, " min value ");
+            i0__namespace.ɵɵadvance(2);
+            i0__namespace.ɵɵtextInterpolate1(" ", ctx_r13.tempFilter[config_r7.filterBy].maxValue, " max value ");
+            i0__namespace.ɵɵadvance(2);
+            i0__namespace.ɵɵtextInterpolate1(" ", ctx_r13.tempFilter[config_r7.filterBy].rangeStep, " rangeStep step ");
+            i0__namespace.ɵɵadvance(2);
+            i0__namespace.ɵɵtextInterpolate1(" ", ctx_r13.tempFilter[config_r7 == null ? null : config_r7.filterBy], " ");
+            i0__namespace.ɵɵadvance(1);
+            i0__namespace.ɵɵproperty("value", ctx_r13.tempFilter[config_r7.filterBy].rangeValue)("min", ctx_r13.tempFilter[config_r7.filterBy].minValue)("max", ctx_r13.tempFilter[config_r7.filterBy].maxValue)("step", ctx_r13.tempFilter[config_r7.filterBy].rangeStep)("type", "Range");
+            i0__namespace.ɵɵadvance(1);
+            i0__namespace.ɵɵproperty("type", "minType")("value", "100");
+        }
+    }
+    function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_hr_4_Template(rf, ctx) {
+        if (rf & 1) {
+            i0__namespace.ɵɵelement(0, "hr");
+        }
+    }
+    function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0__namespace.ɵɵelementStart(0, "div");
+            i0__namespace.ɵɵtemplate(1, NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_1_Template, 7, 1, "div", 14);
+            i0__namespace.ɵɵtemplate(2, NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_2_Template, 4, 6, "div", 7);
+            i0__namespace.ɵɵtemplate(3, NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_3_Template, 16, 14, "div", 7);
+            i0__namespace.ɵɵtemplate(4, NgxFilterSearchComponent_div_0_div_9_div_1_div_1_hr_4_Template, 1, 0, "hr", 7);
+            i0__namespace.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r44 = i0__namespace.ɵɵnextContext();
+            var config_r7 = ctx_r44.$implicit;
+            var last_r9 = ctx_r44.last;
+            var ctx_r10 = i0__namespace.ɵɵnextContext(3);
+            i0__namespace.ɵɵadvance(1);
+            i0__namespace.ɵɵproperty("ngIf", !(config_r7 == null ? null : config_r7.minimumShowLimit) && ctx_r10.tempFilter[config_r7.filterBy].length > 0 || ctx_r10.tempFilter[config_r7.filterBy].length > (config_r7 == null ? null : config_r7.minimumShowLimit) && (config_r7 == null ? null : config_r7.isShowFilter) && (config_r7 == null ? null : config_r7.filterType) == "checkBoxes" && ctx_r10.tempFilter[config_r7.filterBy].length > 0 || (config_r7 == null ? null : config_r7.filterType) == "range_slider" && ctx_r10.tempFilter[config_r7.filterBy].maxValue > 0);
+            i0__namespace.ɵɵadvance(1);
+            i0__namespace.ɵɵproperty("ngIf", (config_r7 == null ? null : config_r7.isShowFilter) && (config_r7 == null ? null : config_r7.filterType) == "checkBoxes" && (!(config_r7 == null ? null : config_r7.minimumShowLimit) || ctx_r10.tempFilter[config_r7.filterBy].length > (config_r7 == null ? null : config_r7.minimumShowLimit)));
+            i0__namespace.ɵɵadvance(1);
+            i0__namespace.ɵɵproperty("ngIf", (config_r7 == null ? null : config_r7.isShowFilter) && (config_r7 == null ? null : config_r7.filterType) == "range_slider" && ctx_r10.tempFilter[config_r7.filterBy].maxValue > 0);
+            i0__namespace.ɵɵadvance(1);
+            i0__namespace.ɵɵproperty("ngIf", !last_r9 && (!(config_r7 == null ? null : config_r7.minimumShowLimit) || ctx_r10.tempFilter[config_r7.filterBy].length > (config_r7 == null ? null : config_r7.minimumShowLimit) && (config_r7 == null ? null : config_r7.isShowFilter) && (config_r7 == null ? null : config_r7.filterType) == "checkBoxes" || (config_r7 == null ? null : config_r7.filterType) == "range_slider") && (config_r7 == null ? null : config_r7.showBottomBar));
+        }
+    }
+    function NgxFilterSearchComponent_div_0_div_9_div_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0__namespace.ɵɵelementStart(0, "div");
+            i0__namespace.ɵɵtemplate(1, NgxFilterSearchComponent_div_0_div_9_div_1_div_1_Template, 5, 4, "div", 7);
+            i0__namespace.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var config_r7 = ctx.$implicit;
+            var ctx_r6 = i0__namespace.ɵɵnextContext(3);
+            i0__namespace.ɵɵadvance(1);
+            i0__namespace.ɵɵproperty("ngIf", (config_r7 == null ? null : config_r7.isShowFilter) && ctx_r6.tempFilter[config_r7.filterBy]);
+        }
+    }
+    function NgxFilterSearchComponent_div_0_div_9_Template(rf, ctx) {
+        if (rf & 1) {
+            i0__namespace.ɵɵelementStart(0, "div");
+            i0__namespace.ɵɵtemplate(1, NgxFilterSearchComponent_div_0_div_9_div_1_Template, 2, 1, "div", 13);
+            i0__namespace.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r2 = i0__namespace.ɵɵnextContext(2);
+            i0__namespace.ɵɵadvance(1);
+            i0__namespace.ɵɵproperty("ngForOf", ctx_r2.config.filter.filterParameter);
+        }
+    }
+    function NgxFilterSearchComponent_div_0_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r46_1 = i0__namespace.ɵɵgetCurrentView();
+            i0__namespace.ɵɵelementStart(0, "div", 1);
+            i0__namespace.ɵɵelementStart(1, "div", 2);
+            i0__namespace.ɵɵelementStart(2, "div", 3);
+            i0__namespace.ɵɵelement(3, "div", 4);
+            i0__namespace.ɵɵelementStart(4, "div", 4);
+            i0__namespace.ɵɵelementStart(5, "h6", 5);
+            i0__namespace.ɵɵlistener("click", function NgxFilterSearchComponent_div_0_Template_h6_click_5_listener() { i0__namespace.ɵɵrestoreView(_r46_1); var ctx_r45 = i0__namespace.ɵɵnextContext(); return ctx_r45.clearAllFilters(); });
+            i0__namespace.ɵɵtext(6, "Clear All");
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵtemplate(7, NgxFilterSearchComponent_div_0_div_7_Template, 6, 1, "div", 6);
+            i0__namespace.ɵɵelement(8, "hr");
+            i0__namespace.ɵɵtemplate(9, NgxFilterSearchComponent_div_0_div_9_Template, 2, 1, "div", 7);
+            i0__namespace.ɵɵelementEnd();
+            i0__namespace.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var ctx_r0 = i0__namespace.ɵɵnextContext();
+            i0__namespace.ɵɵadvance(7);
+            i0__namespace.ɵɵproperty("ngIf", ctx_r0.config == null ? null : ctx_r0.config.search == null ? null : ctx_r0.config.search.isSearchShow);
+            i0__namespace.ɵɵadvance(2);
+            i0__namespace.ɵɵproperty("ngIf", (ctx_r0.config == null ? null : ctx_r0.config.filter == null ? null : ctx_r0.config.filter.isShowFilter) && ctx_r0.tempFilter);
+        }
+    }
     var NgxFilterSearchComponent = /** @class */ (function () {
         function NgxFilterSearchComponent() {
             this.filteredData = new i0.EventEmitter();
@@ -412,7 +674,6 @@
                 this.setCheckBoxFilter(data[i]);
             }
             this.sortCheckBoxesFilter();
-            console.log(this.tempFilter, 'this.temopfiler');
         };
         NgxFilterSearchComponent.prototype.setCheckBoxFilter = function (data) {
             // Checked the filter parameter
@@ -567,8 +828,6 @@
             var _this = this;
             // Assign the original array without any filter to the newLots
             var newLots = this.data;
-            console.log(this.data, 'this.data');
-            console.log(this.config.search.searchParameter.length, 'this.config.search.searchParameter.length');
             // Check the searchText is not undefined and then search the by provided fields.
             if (this.searchText !== undefined) {
                 this.searchText = this.searchText.toLocaleLowerCase();
@@ -576,9 +835,6 @@
                 var _loop_2 = function (j) {
                     var searchArray = [];
                     searchArray = this_2.data.filter(function (it) {
-                        console.log(it, 'it');
-                        console.log(_this.config.search.searchParameter[j].searchBy, 'this.config.search.searchParameter[j].searchBy');
-                        console.log(it[_this.config.search.searchParameter[j].searchBy], 'it[this.config.search.searchParameter[j].searchBy]');
                         if (it[_this.config.search.searchParameter[j].searchBy] != null && it[_this.config.search.searchParameter[j].searchBy] != undefined) {
                             return it[_this.config.search.searchParameter[j].searchBy].toLocaleLowerCase().includes(_this.searchText);
                         }
@@ -596,8 +852,6 @@
                     _loop_2(j);
                 }
             }
-            console.log(newLots, 'newLots in middel');
-            console.log(this.config.filter.filterParameter.length, 'this.config.filter.filterParameter.length');
             var allSelectedCheckBoxesArray = [];
             var allSelectedRangeFilterArray = [];
             // Check the config for the filter....
@@ -620,12 +874,10 @@
             }
             var singleTypeFilterArray = [];
             this.allSelectedFilters = allSelectedCheckBoxesArray;
-            console.log(this.allSelectedFilters, 'this.allSelectedFilters ');
             //Filter the data based on checkboxes
             if (allSelectedCheckBoxesArray.length > 0) {
                 // Filter the each array at a time, In config multiple filters.
                 singleTypeFilterArray = this.filterSingle(newLots, allSelectedCheckBoxesArray);
-                console.log(singleTypeFilterArray, 'singleTypeFilterArray');
                 newLots = singleTypeFilterArray;
             }
             else {
@@ -645,23 +897,18 @@
             this.filterData = newLots;
             // Check the Sorting is applied if Yes then sort the array after filter.
             if (this.isSorted) {
-                console.log(this.filterData, 'this.filterData in library ..first');
                 //this.sortLots();
             }
             else {
-                console.log(this.filterData, 'this.filterData in library');
                 this.filteredData.emit(this.filterData);
             }
             // Emit the value to the parent component
             //this.addFilterToRoute()
         };
         NgxFilterSearchComponent.prototype.filterSingle = function (data, selectedCheckBoxesArrays) {
-            console.log(data, 'data in the filter single');
-            console.log(selectedCheckBoxesArrays, 'selectedCheckBoxesArrays');
             for (var k = selectedCheckBoxesArrays.length - 1; k >= 0; k--) {
                 var newData = [];
                 if (selectedCheckBoxesArrays[k].length > 0) {
-                    console.log(selectedCheckBoxesArrays[k], 'selectedCheckBoxesArrays[k]');
                     data = this.filterArrayBasedOnCheckBoxes(data, selectedCheckBoxesArrays[k]);
                     if (data.length > 0) {
                         newData.push.apply(newData, __spread(data));
@@ -672,8 +919,6 @@
                     }
                 }
             }
-            console.log(data, 'data');
-            console.log(newData, 'newData');
             return this.uniqueValuesInArray(data);
         };
         NgxFilterSearchComponent.prototype.filterSingleRangeFilter = function (data, selectedRangeFilterArrays) {
@@ -708,8 +953,6 @@
                     });
                 }
             }
-            console.log(filtered, 'filtered');
-            console.log(this.uniqueValuesInArray(filtered), 'this.uniqueValuesInArray(filtered)');
             return this.uniqueValuesInArray(filtered);
         };
         NgxFilterSearchComponent.prototype.uniqueValuesInArray = function (data) {
@@ -787,37 +1030,71 @@
         };
         return NgxFilterSearchComponent;
     }());
-    NgxFilterSearchComponent.decorators = [
-        { type: i0.Component, args: [{
-                    selector: 'lib-ngx-filter-search',
-                    template: "<div class=\"row\" *ngIf=\"data && config\">\n  <div class=\"col-sm-12\">\n     <div class=\"row pt-1 pb-1\">\n       <div class=\"col-sm-6\">\n\n       </div>\n       <div class=\"col-sm-6\">\n         <h6 class=\"float-right cursor-pointer text-primary\" (click)=\"clearAllFilters()\">Clear All</h6>\n       </div>\n     </div>\n      <div *ngIf=\"config?.search?.isSearchShow\" class=\"pt-1 pb-1\">\n        <strong class=\"pt-2 pb-2 font-weight-bold text-capitalize\">Search</strong>\n          <div class=\"input-group pt-1\">\n            <div class=\"form-outline\">\n              <input type=\"text\" id=\"form1\" class=\"form-control\" [(ngModel)]=\"searchText\" placeholder=\"Search Keyword...\" (keyup)=\"applyFilter()\"/>\n            </div>\n          </div>\n      </div>\n      <hr>\n      <div *ngIf=\"config?.filter?.isShowFilter && tempFilter\">\n        <div *ngFor=\"let config of config.filter.filterParameter; let i = index;let last = last;\">\n            <div *ngIf=\"config?.isShowFilter && tempFilter[config.filterBy]\">\n              <div class=\"row pt-1 pb-1\" *ngIf=\"(((!config?.minimumShowLimit && tempFilter[config.filterBy].length > 0) || (tempFilter[config.filterBy].length > config?.minimumShowLimit && config?.isShowFilter && config?.filterType == 'checkBoxes' && tempFilter[config.filterBy].length > 0)) || (config?.filterType == 'range_slider' && tempFilter[config.filterBy].maxValue > 0 ))\">\n                <div class=\"col-sm-8 float-left\">\n                  <strong class=\"font-weight-bold\">{{ tempFilter[config.filterBy]?.filterTitle}}</strong>\n                </div>\n                <div class=\"col-sm-4\">\n                  <h6 class=\"float-right cursor-pointer text-primary clear\" (click)=\"clearSingleFilters(tempFilter[config.filterBy].filterBy,tempFilter[config.filterBy].filterType)\">Clear</h6>\n                </div>\n              </div>\n              <div *ngIf=\"(config?.isShowFilter && config?.filterType == 'checkBoxes' && (!config?.minimumShowLimit || (tempFilter[config.filterBy].length > config?.minimumShowLimit))) \">\n                <div class=\"\" *ngFor=\"let filter of tempFilter[config.filterBy] | slice : 0:(!tempFilter[config.filterBy].isShowMore ? config.filterCheckBoxLimit : tempFilter[config.filterBy].filterCheckBoxLimit); let i = index\">\n                  <input type=\"checkbox\" [id]=\"filter.fieldName\" [name]=\"filter.fieldName\" [value]=\"filter.fieldValue\" [(ngModel)]=\"filter.isChecked\" (change)=\"applyFilter()\">\n                  <span class=\"pl-2 font-small\">\n                    {{filter.fieldName}}\n                  </span>\n                </div>\n                <div *ngIf=\"tempFilter[config.filterBy].length > config?.filterCheckBoxLimit \">\n                  <h6 class=\"cursor-pointer text-primary pt-1\" *ngIf =\"!tempFilter[config.filterBy].isShowMore\" (click)=\"showMoreItems(tempFilter[config.filterBy].filterBy,true)\">\n                  {{ tempFilter[config.filterBy].length - config.filterCheckBoxLimit }} More\n                  </h6>\n                  <h6 class=\"cursor-pointer text-primary pt-1\" *ngIf =\"tempFilter[config.filterBy].isShowMore\" (click)=\"showMoreItems(tempFilter[config.filterBy].filterBy, false)\">\n                    Show Less\n                  </h6>\n                </div>\n            </div>\n            <div *ngIf=\"config?.isShowFilter && config?.filterType == 'range_slider' && tempFilter[config.filterBy].maxValue > 0\">\n              <!-- (change)=\"loanChange($event)\" \n               [ticks]=\"tempFilter[config.filterBy].ticks\" \n               [ticks]=\"tempFilter[config.filterBy].ticks\"\n              -->\n              <!-- {{tempFilter[config.filterBy].ticks | json}} -->\n              <!-- {{tempFilter[config.filterBy]  | json}} -->\n              <!-- {{tempFilter[config.filterBy].minValue}} -->\n              <!-- {{tempFilter[config.filterBy | json}} -->\n              <!-- [ticks]=\"tempFilter[config.filterBy].ticks\" \n                [tooltip]=\"tempFilter[config.filterBy].tooltip\"\n                 [ticks]=\"tempFilter[config.filterBy].ticks\"\n                 [tooltip]=\"tempFilter[config.filterBy].tooltip\"\n              --> \n              <!-- [ticks]=\"tempFilter[config.filterBy].ticks\" -->\n              <span class=\"min\">\n                <span>\n                  {{tempFilter[config.filterBy].rangeValue[0]}} - {{tempFilter[config.filterBy].rangeValue[1]}}\n                </span>\n              </span>\n              <div>\n                {{tempFilter[config.filterBy].rangeValue}} range value\n              </div>\n              <div>\n                {{tempFilter[config.filterBy].minValue }} min value\n              </div>\n              <div>\n                {{tempFilter[config.filterBy].maxValue}} max value\n              </div>\n              <div>\n                {{ tempFilter[config.filterBy].rangeStep}} rangeStep step\n              </div>\n              <div>\n                {{tempFilter[config?.filterBy]}}\n              </div>\n              <ejs-slider\n                id=\"range\"\n                [(value)]=\"tempFilter[config.filterBy].rangeValue\"\n                [min]=\"tempFilter[config.filterBy].minValue\"\n                [max]=\"tempFilter[config.filterBy].maxValue\"\n                [step]=\"tempFilter[config.filterBy].rangeStep\"\n                [type]=\"'Range'\"\n                (change)=\"sliderChange(tempFilter[config?.filterBy])\"\n                (changed)=\"applyFilter()\">\n                </ejs-slider>\n                <ejs-slider id='minrange' [type]=\"'minType'\" [value]=\"'100'\"></ejs-slider>\n                 <!-- <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                    <span class=\"float-left min\">\u20B9 {{tempFilter[config.filterBy].minValue}}</span>\n                  </div>\n                  <div class=\"col-sm-6\">\n                    <span class=\"float-right min\">\u20B9 {{tempFilter[config.filterBy].maxValue}}</span>\n                  </div>\n                 </div> -->\n                <!-- <div class=\"row\" *ngIf=\"tempFilter[config.filterBy].dropdown.length > 0\">\n                    <div class=\"col-sm-6 \">\n                        <div class=\"pt-1\">\n                          <select class=\"browser-default custom-select float-right range-select\" \n                            [(ngModel)]=\"tempFilter[config.filterBy].dropDownRangeValues[0]\"\n                            (change)=\"rangeDropDownOnChange(tempFilter[config.filterBy])\">\n                            <option\n                            *ngFor=\"let value of tempFilter[config.filterBy].dropdown\"\n                            [ngValue]=\"value\"\n                            >\n                            {{ value | currencyLocal:'INR'}}\n                            </option>\n                          </select>\n                        </div>\n                    </div>\n                    <div class=\"col-sm-6 \">\n                        <div class=\"pt-1\">\n                          <select class=\"browser-default custom-select float-right range-select\"\n                          [(ngModel)]=\"tempFilter[config.filterBy].dropDownRangeValues[1]\"\n                          (change)=\"rangeDropDownOnChange(tempFilter[config.filterBy])\">\n                            <option\n                            *ngFor=\"let value of tempFilter[config.filterBy].dropdown\"\n                             [ngValue]=\"value\"\n                            >\n                            {{ value | currencyLocal:'INR'}}\n                            </option>\n                          </select>\n                        </div>\n                    </div>\n                </div> -->\n              </div>\n            <hr *ngIf=\"(!last && ((!config?.minimumShowLimit || (tempFilter[config.filterBy].length > config?.minimumShowLimit && config?.isShowFilter && config?.filterType == 'checkBoxes')) || (config?.filterType == 'range_slider')) && config?.showBottomBar)\">\n          </div>\n        </div>\n      </div>\n  </div>\n</div>\n",
-                    styles: ["@import \"node_modules/@syncfusion/ej2-angular-inputs/styles/material.css\";@import \"node_modules/@syncfusion/ej2-base/styles/material.css\";@import \"node_modules/@syncfusion/ej2-buttons/styles/material.css\";@import \"node_modules/@syncfusion/ej2-popups/styles/material.css\";"]
-                },] }
-    ];
-    NgxFilterSearchComponent.ctorParameters = function () { return []; };
-    NgxFilterSearchComponent.propDecorators = {
-        data: [{ type: i0.Input }],
-        config: [{ type: i0.Input }],
-        filteredData: [{ type: i0.Output }]
-    };
+    NgxFilterSearchComponent.ɵfac = function NgxFilterSearchComponent_Factory(t) { return new (t || NgxFilterSearchComponent)(); };
+    NgxFilterSearchComponent.ɵcmp = i0__namespace.ɵɵdefineComponent({ type: NgxFilterSearchComponent, selectors: [["lib-ngx-filter-search"]], inputs: { data: "data", config: "config" }, outputs: { filteredData: "filteredData" }, decls: 1, vars: 1, consts: [["class", "row", 4, "ngIf"], [1, "row"], [1, "col-sm-12"], [1, "row", "pt-1", "pb-1"], [1, "col-sm-6"], [1, "float-right", "cursor-pointer", "text-primary", 3, "click"], ["class", "pt-1 pb-1", 4, "ngIf"], [4, "ngIf"], [1, "pt-1", "pb-1"], [1, "pt-2", "pb-2", "font-weight-bold", "text-capitalize"], [1, "input-group", "pt-1"], [1, "form-outline"], ["type", "text", "id", "form1", "placeholder", "Search Keyword...", 1, "form-control", 3, "ngModel", "ngModelChange", "keyup"], [4, "ngFor", "ngForOf"], ["class", "row pt-1 pb-1", 4, "ngIf"], [1, "col-sm-8", "float-left"], [1, "font-weight-bold"], [1, "col-sm-4"], [1, "float-right", "cursor-pointer", "text-primary", "clear", 3, "click"], ["class", "", 4, "ngFor", "ngForOf"], [1, ""], ["type", "checkbox", 3, "id", "name", "value", "ngModel", "ngModelChange", "change"], [1, "pl-2", "font-small"], ["class", "cursor-pointer text-primary pt-1", 3, "click", 4, "ngIf"], [1, "cursor-pointer", "text-primary", "pt-1", 3, "click"], [1, "min"], ["id", "range", 3, "value", "min", "max", "step", "type", "valueChange", "change", "changed"], ["id", "minrange", 3, "type", "value"]], template: function NgxFilterSearchComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0__namespace.ɵɵtemplate(0, NgxFilterSearchComponent_div_0_Template, 10, 2, "div", 0);
+            }
+            if (rf & 2) {
+                i0__namespace.ɵɵproperty("ngIf", ctx.data && ctx.config);
+            }
+        }, directives: [i1__namespace.NgIf, i2__namespace.DefaultValueAccessor, i2__namespace.NgControlStatus, i2__namespace.NgModel, i1__namespace.NgForOf, i2__namespace.CheckboxControlValueAccessor, i3__namespace.SliderComponent], pipes: [i1__namespace.SlicePipe], encapsulation: 2 });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(NgxFilterSearchComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'lib-ngx-filter-search',
+                        // template: `
+                        //   <p>
+                        //     ngx-filter-search works!
+                        //   </p>
+                        // `,
+                        // styleUrls: ['./ngx-filter-search.component.scss'],
+                        templateUrl: './ngx-filter-search.component.html',
+                        styles: []
+                    }]
+            }], function () { return []; }, { data: [{
+                    type: i0.Input
+                }], config: [{
+                    type: i0.Input
+                }], filteredData: [{
+                    type: i0.Output
+                }] });
+    })();
 
     var NgxFilterSearchModule = /** @class */ (function () {
         function NgxFilterSearchModule() {
         }
         return NgxFilterSearchModule;
     }());
-    NgxFilterSearchModule.decorators = [
-        { type: i0.NgModule, args: [{
-                    declarations: [NgxFilterSearchComponent],
-                    imports: [
-                        platformBrowser.BrowserModule,
-                        common.CommonModule,
-                        ej2AngularInputs.SliderModule,
-                        forms.FormsModule,
-                    ],
-                    exports: [NgxFilterSearchComponent]
-                },] }
-    ];
+    NgxFilterSearchModule.ɵmod = i0__namespace.ɵɵdefineNgModule({ type: NgxFilterSearchModule });
+    NgxFilterSearchModule.ɵinj = i0__namespace.ɵɵdefineInjector({ factory: function NgxFilterSearchModule_Factory(t) { return new (t || NgxFilterSearchModule)(); }, imports: [[
+                platformBrowser.BrowserModule,
+                i1.CommonModule,
+                i3.SliderModule,
+                i2.FormsModule,
+            ]] });
+    (function () {
+        (typeof ngJitMode === "undefined" || ngJitMode) && i0__namespace.ɵɵsetNgModuleScope(NgxFilterSearchModule, { declarations: [NgxFilterSearchComponent], imports: [platformBrowser.BrowserModule,
+                i1.CommonModule,
+                i3.SliderModule,
+                i2.FormsModule], exports: [NgxFilterSearchComponent] });
+    })();
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(NgxFilterSearchModule, [{
+                type: i0.NgModule,
+                args: [{
+                        declarations: [NgxFilterSearchComponent],
+                        imports: [
+                            platformBrowser.BrowserModule,
+                            i1.CommonModule,
+                            i3.SliderModule,
+                            i2.FormsModule,
+                        ],
+                        exports: [NgxFilterSearchComponent]
+                    }]
+            }], null, null);
+    })();
 
     /*
      * Public API Surface of ngx-filter-search
