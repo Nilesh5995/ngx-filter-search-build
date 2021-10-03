@@ -496,25 +496,9 @@
             i0__namespace.ɵɵtext(3);
             i0__namespace.ɵɵelementEnd();
             i0__namespace.ɵɵelementEnd();
-            i0__namespace.ɵɵelementStart(4, "div");
-            i0__namespace.ɵɵtext(5);
+            i0__namespace.ɵɵelementStart(4, "ejs-slider", 26);
+            i0__namespace.ɵɵlistener("valueChange", function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_3_Template_ejs_slider_valueChange_4_listener($event) { i0__namespace.ɵɵrestoreView(_r38_1); var config_r7 = i0__namespace.ɵɵnextContext(2).$implicit; var ctx_r37 = i0__namespace.ɵɵnextContext(3); return ctx_r37.tempFilter[config_r7.filterBy].rangeValue = $event; })("change", function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_3_Template_ejs_slider_change_4_listener() { i0__namespace.ɵɵrestoreView(_r38_1); var config_r7 = i0__namespace.ɵɵnextContext(2).$implicit; var ctx_r40 = i0__namespace.ɵɵnextContext(3); return ctx_r40.sliderChange(ctx_r40.tempFilter[config_r7 == null ? null : config_r7.filterBy]); })("changed", function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_3_Template_ejs_slider_changed_4_listener() { i0__namespace.ɵɵrestoreView(_r38_1); var ctx_r42 = i0__namespace.ɵɵnextContext(5); return ctx_r42.applyFilter(); });
             i0__namespace.ɵɵelementEnd();
-            i0__namespace.ɵɵelementStart(6, "div");
-            i0__namespace.ɵɵtext(7);
-            i0__namespace.ɵɵelementEnd();
-            i0__namespace.ɵɵelementStart(8, "div");
-            i0__namespace.ɵɵtext(9);
-            i0__namespace.ɵɵelementEnd();
-            i0__namespace.ɵɵelementStart(10, "div");
-            i0__namespace.ɵɵtext(11);
-            i0__namespace.ɵɵelementEnd();
-            i0__namespace.ɵɵelementStart(12, "div");
-            i0__namespace.ɵɵtext(13);
-            i0__namespace.ɵɵelementEnd();
-            i0__namespace.ɵɵelementStart(14, "ejs-slider", 26);
-            i0__namespace.ɵɵlistener("valueChange", function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_3_Template_ejs_slider_valueChange_14_listener($event) { i0__namespace.ɵɵrestoreView(_r38_1); var config_r7 = i0__namespace.ɵɵnextContext(2).$implicit; var ctx_r37 = i0__namespace.ɵɵnextContext(3); return ctx_r37.tempFilter[config_r7.filterBy].rangeValue = $event; })("change", function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_3_Template_ejs_slider_change_14_listener() { i0__namespace.ɵɵrestoreView(_r38_1); var config_r7 = i0__namespace.ɵɵnextContext(2).$implicit; var ctx_r40 = i0__namespace.ɵɵnextContext(3); return ctx_r40.sliderChange(ctx_r40.tempFilter[config_r7 == null ? null : config_r7.filterBy]); })("changed", function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_3_Template_ejs_slider_changed_14_listener() { i0__namespace.ɵɵrestoreView(_r38_1); var ctx_r42 = i0__namespace.ɵɵnextContext(5); return ctx_r42.applyFilter(); });
-            i0__namespace.ɵɵelementEnd();
-            i0__namespace.ɵɵelement(15, "ejs-slider", 27);
             i0__namespace.ɵɵelementEnd();
         }
         if (rf & 2) {
@@ -522,20 +506,8 @@
             var ctx_r13 = i0__namespace.ɵɵnextContext(3);
             i0__namespace.ɵɵadvance(3);
             i0__namespace.ɵɵtextInterpolate2(" ", ctx_r13.tempFilter[config_r7.filterBy].rangeValue[0], " - ", ctx_r13.tempFilter[config_r7.filterBy].rangeValue[1], " ");
-            i0__namespace.ɵɵadvance(2);
-            i0__namespace.ɵɵtextInterpolate1(" ", ctx_r13.tempFilter[config_r7.filterBy].rangeValue, " range value ");
-            i0__namespace.ɵɵadvance(2);
-            i0__namespace.ɵɵtextInterpolate1(" ", ctx_r13.tempFilter[config_r7.filterBy].minValue, " min value ");
-            i0__namespace.ɵɵadvance(2);
-            i0__namespace.ɵɵtextInterpolate1(" ", ctx_r13.tempFilter[config_r7.filterBy].maxValue, " max value ");
-            i0__namespace.ɵɵadvance(2);
-            i0__namespace.ɵɵtextInterpolate1(" ", ctx_r13.tempFilter[config_r7.filterBy].rangeStep, " rangeStep step ");
-            i0__namespace.ɵɵadvance(2);
-            i0__namespace.ɵɵtextInterpolate1(" ", ctx_r13.tempFilter[config_r7 == null ? null : config_r7.filterBy], " ");
             i0__namespace.ɵɵadvance(1);
             i0__namespace.ɵɵproperty("value", ctx_r13.tempFilter[config_r7.filterBy].rangeValue)("min", ctx_r13.tempFilter[config_r7.filterBy].minValue)("max", ctx_r13.tempFilter[config_r7.filterBy].maxValue)("step", ctx_r13.tempFilter[config_r7.filterBy].rangeStep)("type", "Range");
-            i0__namespace.ɵɵadvance(1);
-            i0__namespace.ɵɵproperty("type", "minType")("value", "100");
         }
     }
     function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_hr_4_Template(rf, ctx) {
@@ -548,7 +520,7 @@
             i0__namespace.ɵɵelementStart(0, "div");
             i0__namespace.ɵɵtemplate(1, NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_1_Template, 7, 1, "div", 14);
             i0__namespace.ɵɵtemplate(2, NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_2_Template, 4, 6, "div", 7);
-            i0__namespace.ɵɵtemplate(3, NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_3_Template, 16, 14, "div", 7);
+            i0__namespace.ɵɵtemplate(3, NgxFilterSearchComponent_div_0_div_9_div_1_div_1_div_3_Template, 5, 7, "div", 7);
             i0__namespace.ɵɵtemplate(4, NgxFilterSearchComponent_div_0_div_9_div_1_div_1_hr_4_Template, 1, 0, "hr", 7);
             i0__namespace.ɵɵelementEnd();
         }
@@ -1031,7 +1003,7 @@
         return NgxFilterSearchComponent;
     }());
     NgxFilterSearchComponent.ɵfac = function NgxFilterSearchComponent_Factory(t) { return new (t || NgxFilterSearchComponent)(); };
-    NgxFilterSearchComponent.ɵcmp = i0__namespace.ɵɵdefineComponent({ type: NgxFilterSearchComponent, selectors: [["lib-ngx-filter-search"]], inputs: { data: "data", config: "config" }, outputs: { filteredData: "filteredData" }, decls: 1, vars: 1, consts: [["class", "row", 4, "ngIf"], [1, "row"], [1, "col-sm-12"], [1, "row", "pt-1", "pb-1"], [1, "col-sm-6"], [1, "float-right", "cursor-pointer", "text-primary", 3, "click"], ["class", "pt-1 pb-1", 4, "ngIf"], [4, "ngIf"], [1, "pt-1", "pb-1"], [1, "pt-2", "pb-2", "font-weight-bold", "text-capitalize"], [1, "input-group", "pt-1"], [1, "form-outline"], ["type", "text", "id", "form1", "placeholder", "Search Keyword...", 1, "form-control", 3, "ngModel", "ngModelChange", "keyup"], [4, "ngFor", "ngForOf"], ["class", "row pt-1 pb-1", 4, "ngIf"], [1, "col-sm-8", "float-left"], [1, "font-weight-bold"], [1, "col-sm-4"], [1, "float-right", "cursor-pointer", "text-primary", "clear", 3, "click"], ["class", "", 4, "ngFor", "ngForOf"], [1, ""], ["type", "checkbox", 3, "id", "name", "value", "ngModel", "ngModelChange", "change"], [1, "pl-2", "font-small"], ["class", "cursor-pointer text-primary pt-1", 3, "click", 4, "ngIf"], [1, "cursor-pointer", "text-primary", "pt-1", 3, "click"], [1, "min"], ["id", "range", 3, "value", "min", "max", "step", "type", "valueChange", "change", "changed"], ["id", "minrange", 3, "type", "value"]], template: function NgxFilterSearchComponent_Template(rf, ctx) {
+    NgxFilterSearchComponent.ɵcmp = i0__namespace.ɵɵdefineComponent({ type: NgxFilterSearchComponent, selectors: [["lib-ngx-filter-search"]], inputs: { data: "data", config: "config" }, outputs: { filteredData: "filteredData" }, decls: 1, vars: 1, consts: [["class", "row", 4, "ngIf"], [1, "row"], [1, "col-sm-12"], [1, "row", "pt-1", "pb-1"], [1, "col-sm-6"], [1, "float-right", "cursor-pointer", "text-primary", 3, "click"], ["class", "pt-1 pb-1", 4, "ngIf"], [4, "ngIf"], [1, "pt-1", "pb-1"], [1, "pt-2", "pb-2", "font-weight-bold", "text-capitalize"], [1, "input-group", "pt-1"], [1, "form-outline"], ["type", "text", "id", "form1", "placeholder", "Search Keyword...", 1, "form-control", 3, "ngModel", "ngModelChange", "keyup"], [4, "ngFor", "ngForOf"], ["class", "row pt-1 pb-1", 4, "ngIf"], [1, "col-sm-8", "float-left"], [1, "font-weight-bold"], [1, "col-sm-4"], [1, "float-right", "cursor-pointer", "text-primary", "clear", 3, "click"], ["class", "", 4, "ngFor", "ngForOf"], [1, ""], ["type", "checkbox", 3, "id", "name", "value", "ngModel", "ngModelChange", "change"], [1, "pl-2", "font-small"], ["class", "cursor-pointer text-primary pt-1", 3, "click", 4, "ngIf"], [1, "cursor-pointer", "text-primary", "pt-1", 3, "click"], [1, "min"], ["id", "range", 3, "value", "min", "max", "step", "type", "valueChange", "change", "changed"]], template: function NgxFilterSearchComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0__namespace.ɵɵtemplate(0, NgxFilterSearchComponent_div_0_Template, 10, 2, "div", 0);
             }
