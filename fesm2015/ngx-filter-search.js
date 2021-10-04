@@ -166,7 +166,7 @@ function NgxFilterSearchComponent_div_0_div_9_div_1_div_1_Template(rf, ctx) { if
     i0.ɵɵadvance(1);
     i0.ɵɵproperty("ngIf", (config_r7 == null ? null : config_r7.isShowFilter) && (config_r7 == null ? null : config_r7.filterType) == "range_slider" && ctx_r10.tempFilter[config_r7.filterBy].maxValue > 0);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", !last_r9 && (!(config_r7 == null ? null : config_r7.minimumShowLimit) || ctx_r10.tempFilter[config_r7.filterBy].length > (config_r7 == null ? null : config_r7.minimumShowLimit) && (config_r7 == null ? null : config_r7.isShowFilter) && (config_r7 == null ? null : config_r7.filterType) == "checkBoxes" || (config_r7 == null ? null : config_r7.filterType) == "range_slider") && (config_r7 == null ? null : config_r7.showBottomBar));
+    i0.ɵɵproperty("ngIf", !last_r9 && (!(config_r7 == null ? null : config_r7.minimumShowLimit) || ctx_r10.tempFilter[config_r7.filterBy].length > (config_r7 == null ? null : config_r7.minimumShowLimit) && (config_r7 == null ? null : config_r7.isShowFilter) && (config_r7 == null ? null : config_r7.filterType) == "checkBoxes" || (config_r7 == null ? null : config_r7.filterType) == "range_slider"));
 } }
 function NgxFilterSearchComponent_div_0_div_9_div_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "div");
@@ -621,14 +621,8 @@ NgxFilterSearchComponent.ɵcmp = i0.ɵɵdefineComponent({ type: NgxFilterSearchC
         type: Component,
         args: [{
                 selector: 'ngx-filter-search',
-                // template: `
-                //   <p>
-                //     ngx-filter-search works!
-                //   </p>
-                // `,
                 styleUrls: ['./ngx-filter-search.component.scss'],
                 templateUrl: './ngx-filter-search.component.html',
-                styles: []
             }]
     }], function () { return []; }, { data: [{
             type: Input
