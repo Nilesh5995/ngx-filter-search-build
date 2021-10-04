@@ -38,6 +38,6 @@ export declare class NgxFilterSearchComponent implements OnInit {
     rangeDropDownOnChange(data: any): void;
     sliderChange(data: any | undefined): void;
     static ɵfac: i0.ɵɵFactoryDef<NgxFilterSearchComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NgxFilterSearchComponent, "lib-ngx-filter-search", never, { "data": "data"; "config": "config"; }, { "filteredData": "filteredData"; }, never, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<NgxFilterSearchComponent, "ngx-filter-search", never, { "data": "data"; "config": "config"; }, { "filteredData": "filteredData"; }, never, never>;
 }
 //# sourceMappingURL=ngx-filter-search.component.d.ts.map
