@@ -23,17 +23,21 @@ Run `ng test ngx-filter-search` to execute the unit tests via [Karma](https://ka
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-# How to use the ngx-fileter-search-library
-- ### Install the library - ``` npm install ngx-filter-search```
-# Import the libarry in your project
+## How to use the ngx-fileter-search-library
+- ### Install the library -
+``` npm install ngx-filter-search```
+## Import the libarry in your project
  - ##### After installing the library you need to import the library in your project.
+
  1. Add the import statement in the module file
  ``` import { NgxFilterSearchModule } from 'ngx-filter-search'; ```
+ 
  2.  add the libary in the import section.
  ```imports: [
     NgxFilterSearchModule
   ],```
-# Add the configuration file
+
+## Add the configuration file
   Create the configuration file , in configuration file create the json object. The example config file shown below you can add filter you want by adding the values in the config
  
  ``` export const filterConfig = {
@@ -139,40 +143,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 }
 ```
 
-# Add the code in the template file , to render the filter
+## Add the code in the template file , to render the filter
 ```  <ngx-filter-search [config]="config" [data]="newRestaurants" (filteredData)="filterOutput($event)"></ngx-filter-search> ```
 
-# Add the function in the .ts file to get the filter data
-```   filterOutput($event) {
-    if ($event) {
+## Add the function in the .ts file to get the filter data
+
+``` filterOutput($event) {  
+if ($event) {
       this.filteredData= $event;
     }
-  } ```
+  }
+  ```
   
-  Assign the $event to the any variable we you want to shows in the template.
-
-
-# NgxFilterSearch
-
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
-
-## Code scaffolding
-
-Run `ng generate component component-name --project ngx-filter-search` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-filter-search`.
-> Note: Don't forget to add `--project ngx-filter-search` or else it will be added to the default project in your `angular.json` file. 
-
-## Build
-
-Run `ng build ngx-filter-search` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build ngx-filter-search`, go to the dist folder `cd dist/ngx-filter-search` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngx-filter-search` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ Assign the $event to the any variable we you want to shows in the template.
