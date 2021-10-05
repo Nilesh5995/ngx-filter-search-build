@@ -1,24 +1,23 @@
 
 ## How to use the ngx-filter-search-library
-- ### Install the library -
+- ##### Install the library -
 ``` npm install ngx-filter-search```
-## Import the libarry in your project
+#### libarry in your project
  - ##### After installing the library you need to import the library in your project.
 
  1. Add the import statement in the module file
  ``` import { NgxFilterSearchModule } from 'ngx-filter-search'; ```
 
 
- 2.  add the libary in the import section.
- ```imports: [
-    NgxFilterSearchModule
-  ],```
+ 2.  add the package in the import section.
 
-## Add the configuration file
+ ``` imports: [ NgxFilterSearchModule ] ```
+
+##### Add the configuration file
   Create the configuration file , in configuration file create the json object. The example config file shown below you can add filter you want by adding the values in the config
 
 
-  export const filterConfig = {
+  ``` export const filterConfig = {
     search: {
                 isSearchShow: true,
                 searchParameter: [
@@ -119,11 +118,13 @@
         ]
     },
 }
+```
 
-## Add the code in the template file , to render the filter
+#### Add the code in the template file , to render the filter
 ```  <ngx-filter-search [config]="config" [data]="newRestaurants" (filteredData)="filterOutput($event)"></ngx-filter-search> ```
 
-## Add the function in the .ts file to get the filter data
+##### Add the function in the .ts file to get the filter data
+
 
 ``` filterOutput($event) {
 if ($event) {
