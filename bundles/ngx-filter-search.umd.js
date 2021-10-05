@@ -652,11 +652,9 @@
             if (this.config.filter && this.config.filter.filterParameter) {
                 var _loop_1 = function (j) {
                     configIndex = this_1.config.filter.filterParameter[j];
-                    // var fieldType = this.config.filter.filterParameter[j].fieldType;
                     if (configIndex.isShowFilter) {
                         key = configIndex.filterBy;
                         isRangeFilterWithDiffValue = false;
-                        //data.hasOwnProperty(configIndex.lowValueFieldName) &&  data.hasOwnProperty(configIndex.highValueFieldName)
                         if (data.hasOwnProperty(configIndex.lowValueFieldValue) && data.hasOwnProperty(configIndex.highValueFieldValue)) {
                             isRangeFilterWithDiffValue = true;
                         }
@@ -874,8 +872,6 @@
             else {
                 this.filteredData.emit(this.filterData);
             }
-            // Emit the value to the parent component
-            //this.addFilterToRoute()
         };
         NgxFilterSearchComponent.prototype.filterSingle = function (data, selectedCheckBoxesArrays) {
             for (var k = selectedCheckBoxesArrays.length - 1; k >= 0; k--) {
@@ -943,7 +939,6 @@
                     filtered.push(lotsArray[lots]);
                 }
             }
-            //rangeFilterArrays.dropDownRangeValues = rangeFilterArrays.rangeValue;
             return this.uniqueValuesInArray(filtered);
         };
         NgxFilterSearchComponent.prototype.clearSingleFilters = function (filterBy, filterType) {

@@ -272,11 +272,9 @@ class NgxFilterSearchComponent {
         if (this.config.filter && this.config.filter.filterParameter) {
             for (let j = this.config.filter.filterParameter.length - 1; j >= 0; j--) {
                 var configIndex = this.config.filter.filterParameter[j];
-                // var fieldType = this.config.filter.filterParameter[j].fieldType;
                 if (configIndex.isShowFilter) {
                     var key = configIndex.filterBy;
                     var isRangeFilterWithDiffValue = false;
-                    //data.hasOwnProperty(configIndex.lowValueFieldName) &&  data.hasOwnProperty(configIndex.highValueFieldName)
                     if (data.hasOwnProperty(configIndex.lowValueFieldValue) && data.hasOwnProperty(configIndex.highValueFieldValue)) {
                         isRangeFilterWithDiffValue = true;
                     }
@@ -485,8 +483,6 @@ class NgxFilterSearchComponent {
         else {
             this.filteredData.emit(this.filterData);
         }
-        // Emit the value to the parent component
-        //this.addFilterToRoute()
     }
     filterSingle(data, selectedCheckBoxesArrays) {
         for (let k = selectedCheckBoxesArrays.length - 1; k >= 0; k--) {
@@ -553,7 +549,6 @@ class NgxFilterSearchComponent {
                 filtered.push(lotsArray[lots]);
             }
         }
-        //rangeFilterArrays.dropDownRangeValues = rangeFilterArrays.rangeValue;
         return this.uniqueValuesInArray(filtered);
     }
     clearSingleFilters(filterBy, filterType) {
