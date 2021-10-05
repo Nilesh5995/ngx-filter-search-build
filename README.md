@@ -15,24 +15,18 @@
 
   Create the configuration file , in configuration file create the json object. The example config file shown below you can add filter you want by adding the values in the config
 
-`     export const filterConfig = {
+```json
+export const filterConfig = {
     search: {
                 isSearchShow: true,
                 searchParameter: [
                    {
                        searchBy: 'Brand',
                    },
-                   {
-                       searchBy: 'Country'
-                   },
-                   {
-                        searchBy: 'Style',
-                   },
-                   {
-                        searchBy: 'Variety',
-                   },
+                   .
+				   .
+				   .
                 ]
-
             },
     filter: {
         isShowFilter: true,
@@ -76,47 +70,14 @@
                 // Shows the minimum checkboxes at once....
                 filterCheckBoxLimit: 10,
             },
-            {
-                filterBy: 'Stars',
-                isShowFilter: true,
-                filterTitle: 'Medium',
-                fieldName: 'Stars',
-                fieldValue: 'Stars',
-                filterValuesSorting: true,
-                filterSortDirection: 'asc',
-                filterType: 'checkBoxes',
-                // Shows the minimum checkboxes at once....
-                filterCheckBoxLimit: 10,
-            },
-            {
-                filterBy: 'Style',
-                isShowFilter: true,
-                filterTitle: 'Style',
-                fieldName: 'Style',
-                fieldValue: 'Style',
-                filterValuesSorting: true,
-                filterSortDirection: 'asc',
-                filterType: 'checkBoxes',
-                // dataType: Number,
-                // Shows the minimum checkboxes at once....
-                filterCheckBoxLimit: 10,
-            },
-            {
-                filterBy: 'Variety',
-                isShowFilter: true,
-                filterTitle: 'Variety',
-                fieldName: 'Variety',
-                fieldValue: 'Variety',
-                filterValuesSorting: true,
-                filterSortDirection: 'asc',
-                filterType: 'checkBoxes',
-                filterCheckBoxLimit: 10,
-                showBottomBar: true
-            },
+           .
+		   .
+		   .
+		   .
         ]
     },
-}
-`
+```
+
 
 
 
