@@ -1,23 +1,21 @@
 
-## How to use the ngx-filter-search-library
-- ##### Install the library -
-``` npm install ngx-filter-search```
-#### libarry in your project
- - ##### After installing the library you need to import the library in your project.
+##  How to use the ngx-filter-search package
+- #### Install the package 
+` npm install ngx-filter-search`
+-  #### Use package in your project
+-  ##### After installing the library you need to import the library in your project.
 
  1. Add the import statement in the module file
- ``` import { NgxFilterSearchModule } from 'ngx-filter-search'; ```
-
-
+`  import { NgxFilterSearchModule } from 'ngx-filter-search'; `
  2.  add the package in the import section.
 
- ``` imports: [ NgxFilterSearchModule ] ```
+ `imports: [ NgxFilterSearchModule ] `
 
-##### Add the configuration file
+- #####  Add the configuration file
+
   Create the configuration file , in configuration file create the json object. The example config file shown below you can add filter you want by adding the values in the config
 
-
-  ``` export const filterConfig = {
+`     export const filterConfig = {
     search: {
                 isSearchShow: true,
                 searchParameter: [
@@ -118,18 +116,20 @@
         ]
     },
 }
-```
-
-#### Add the code in the template file , to render the filter
-```  <ngx-filter-search [config]="config" [data]="newRestaurants" (filteredData)="filterOutput($event)"></ngx-filter-search> ```
-
-##### Add the function in the .ts file to get the filter data
+`
 
 
-``` filterOutput($event) {
+
+- #### Add the code in the template file , to render the filter
+
+`<ngx-filter-search [config]="config" [data]="newRestaurants" (filteredData)="filterOutput($event)"></ngx-filter-search> `
+
+- ##### Add the function in the .ts file to get the filter data
+
+`filterOutput($event) {
 if ($event) {
       this.filteredData= $event;
     }
   }
-  ```
- Assign the $event to the any variable you want to shows in the template.
+  `
+  Assign the $event to the any variable you want to shows in the template.
