@@ -12,7 +12,7 @@
  2.  add the libary in the import section.
  ```imports: [
     NgxFilterSearchModule
-  ],```
+  ],
 
 ## Add the configuration file
   Create the configuration file , in configuration file create the json object. The example config file shown below you can add filter you want by adding the values in the config
